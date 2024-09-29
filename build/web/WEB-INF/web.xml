@@ -21,8 +21,8 @@
         <servlet-class>controlador.borrarProducto</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>guardadrProducto</servlet-name>
-        <servlet-class>controlador.guardadrProducto</servlet-class>
+        <servlet-name>guardarProducto</servlet-name>
+        <servlet-class>controlador.guardarProducto</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>guardarPersona</servlet-name>
@@ -45,8 +45,8 @@
         <url-pattern>/borrarProducto</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>guardadrProducto</servlet-name>
-        <url-pattern>/guardadrProducto</url-pattern>
+        <servlet-name>guardarProducto</servlet-name>
+        <url-pattern>/guardarProducto</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

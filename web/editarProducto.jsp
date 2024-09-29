@@ -30,7 +30,7 @@
                         </thead>
                         <tbody>
                             <td>
-                                <input style="border: none; background: transparent" type="text"  name="id2" value="<%=e.getProducto_id()%>"
+                                <input type="text" name="id2" value="<%=e.getProducto_id()%>"
                             </td>
                             <td>
                                 <input type="text" name="codigo2" value="<%=e.getCodigo()%>">
@@ -51,13 +51,14 @@
                                 <input type="text" name="volumen2" value="<%=e.getVolumen()%>">
                             </td>
                             <td>
-                                <input type="submit" value="Actualizar producto">
+                                <input class="inp_regis" type="submit" value="Actualizar producto">
                             </td>
                         </tbody>
                     </table>
                 </form>
             <br>
             <br>
+            
             <a class="btn_page" href="listaProducto.jsp">LISTAR</a>
         </div>
     </body>

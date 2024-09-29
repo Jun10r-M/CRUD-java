@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-
+:root{
+    --col_hov:#379777;
+    --col_hov2:#F4CE14;
+}
 *{
     padding: 0;
     margin: 0;
@@ -35,11 +38,24 @@ a{
     color: white;
 }
 #edit:hover{
-    color: greenyellow;
+    color: var(--col_hov);
 }
-#delete:hover{
-    color: red;
+.delete:hover{
+    color: var(--col_hov2);
 }
 input{
     width: 100%;
+    border: none;
+    padding: 5px;
+}
+input:focus{
+    outline: none;
+}
+.inp_regis{
+    border: none;
+    background: transparent;
+    cursor:pointer
+}
+.inp_regis:hover{
+    color: var(--col_hov);
 }

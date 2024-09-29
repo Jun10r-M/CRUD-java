@@ -47,7 +47,7 @@
                     <th><%=e.getUnidad()%></th>                   
                     <th><%=e.getVolumen()%></th>
                     <th><a id ="edit" href="editarProducto.jsp?id=<%=e.getProducto_id()%>">Editar</a></th>
-                    <th><a id="delete" href="borrarProducto?id=<%=e.getProducto_id()%>">Eliminar</a></th>
+                    <th><a class="delete" href="borrarProducto?id=<%=e.getProducto_id()%>">Eliminar</a></th>               
                 </tr>
                 <%
                     }
@@ -56,5 +56,19 @@
         </table>
             <br>
             <a class="btn_page" href="index.html">INICIO</a>
+    <script>
+      const deleteLinks = document.querySelectorAll('.delete');
+        
+        deleteLinks.forEach(link => {   
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Evita la acción predeterminada
+
+                if (confirm("¿Seguro que quieres eliminar este producto?")) {
+                    // Si el usuario confirma, redirigir a la URL del enlace
+                    window.location.href = this.href;
+                }
+            });
+        });
+    </script>   
     </body>
 </html>
