@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Karla", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:   center;
+    align-items:center;
+}
+table{
+    outline: none;
+}
+
+th, td{
+    border: 1px solid gray;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn_page{
+    text-decoration: none;
+    background: green;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+#edit:hover{
+    color: greenyellow;
+}
+#delete:hover{
+    color: red;
+}
+input{
+    width: 100%;
+}

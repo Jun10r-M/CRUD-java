@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+         <div class="container">
+            <form method="post" name="registroProducto" action="guardadrProducto">  
+                <table cellspacing="0" style="width: 400px">
+                    <thead>
+                        <th>CODIGO</th>                    
+                        <th>DESCRI</th>
+                        <th>UNIDAD</th>
+                        <th>PRECIO</th>
+                        <th>PESO</th>                 
+                        <th>VOLUMEN</th>
+                        <th>OPERACIONES</th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <input type="text" name="codigo">
+                        </td>
+                        <td>
+                            <input type="text" name="descripcion">
+                        </td>
+                        <td>
+                            <input type="text" name="unidad">
+                        </td>
+                        <td>
+                            <input type="text" name="precio">
+                        </td>
+                        <td>
+                           <input type="text" name="peso">
+                        </td>
+                        <td>
+                            <input type="text" name="volumen">
+                        </td>
+                        <td>
+                            <input type="submit" value="Registrar producto">
+                        </td>
+                    </tbody>
+                </table>
+            </form>
+            <br>
+            <br>
+                <a class="btn_page" href="listaProducto.jsp">LISTAR</a>
+        </div>
+    </body>
+</html>
